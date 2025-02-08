@@ -55,6 +55,20 @@
           };
           auto-format = true;
         }
+        {
+          name = "cpp";
+          file-types = [
+            "cpp"
+            "cc"
+            "cxx"
+            "hpp"
+            "hcc"
+            "hxx"
+          ];
+          formatter.command = "clang-format";
+          auto-format = true;
+        }
+
       ];
       language-server.ruff = {
         command = "ruff-lsp";
