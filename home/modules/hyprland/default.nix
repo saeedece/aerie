@@ -4,14 +4,14 @@
 }:
 {
   imports = [
-    ./waybar.nix
     ./dunst.nix
     ./fuzzel.nix
+    ./hyprpaper.nix
+    ./waybar.nix
   ];
 
   home.packages = with pkgs; [
     hyprpolkitagent
-    swww
   ];
 
   wayland.windowManager.hyprland = {
@@ -20,11 +20,12 @@
       "$mod" = "SUPER";
 
       exec-once = [
+        "waybar"
+        "hyprpaper"
         "dunst"
         "systemctl --user start hyprpolkitagent"
-        "swww-daemon"
         "thunar --daemon"
-        "waybar"
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
       ];
 
       monitor = [
@@ -146,7 +147,7 @@
       };
 
       misc = {
-        "force_default_wallpaper" = 0;
+        "disable_hyprland_logo" = true;
       };
 
       device = {

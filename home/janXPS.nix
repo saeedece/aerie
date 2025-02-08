@@ -23,7 +23,6 @@
       foliate
       gnome-themes-extra
       newsraft
-      vesktop
       xfce.ristretto
     ];
 

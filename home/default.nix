@@ -47,9 +47,4 @@
   manual.manpages.enable = true;
   services.mpris-proxy.enable = true;
   systemd.user.startServices = "sd-switch";
-
-  xdg = {
-    enable = true;
-    mime.enable = pkgs.stdenv.isLinux;
-  };
 }
