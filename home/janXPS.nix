@@ -23,6 +23,7 @@
       foliate
       gnome-themes-extra
       newsraft
+      obs-studio
       xfce.ristretto
     ];
 
