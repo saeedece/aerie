@@ -64,6 +64,8 @@
             "hpp"
             "hcc"
             "hxx"
+            "cu"
+            "cuh"
           ];
           formatter.command = "clang-format";
           auto-format = true;
