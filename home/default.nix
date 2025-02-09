@@ -9,6 +9,7 @@
     ./modules/git.nix
     ./modules/helix.nix
     ./modules/jujutsu.nix
+    ./modules/mpv.nix
     ./modules/starship.nix
     ./modules/zsh.nix
   ];
