@@ -85,9 +85,10 @@
     settings = {
       theme = "modus_operandi";
       editor = {
+        auto-completion = false;
         color-modes = true;
         cursorline = true;
-        end-of-line-diagnostics = "hint";
+        end-of-line-diagnostics = "disable";
         line-number = "relative";
         soft-wrap.enable = true;
         true-color = true;
@@ -108,7 +109,11 @@
         };
 
         inline-diagnostics = {
-          cursor-line = "warning";
+          cursor-line = "disable";
+        };
+
+        lsp = {
+          snippets = false;
         };
       };
     };
