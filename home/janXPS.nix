@@ -19,6 +19,7 @@
     packages = with pkgs; [
       anki-bin
       adwaita-icon-theme
+      discord
       drawio
       foliate
       gnome-themes-extra
