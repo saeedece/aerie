@@ -17,7 +17,7 @@
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.extraModprobeConfig = ''
-    options snd_hda_intel index=0 model=auto
+    options snd_hda_intel index=0 model=auto patch=""
   '';
 
   networking = {
