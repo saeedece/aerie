@@ -140,6 +140,7 @@
       pulse.enable = true;
     };
     blueman.enable = true;
+    gnome.gnome-keyring.enable = true;
   };
 
   virtualisation = {
