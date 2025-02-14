@@ -23,7 +23,6 @@
       drawio
       foliate
       gnome-themes-extra
-      newsraft
       obs-studio
       seahorse
       xfce.ristretto
