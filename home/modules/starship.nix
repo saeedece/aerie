@@ -21,10 +21,6 @@
         truncation_length = 1;
         style = "bold";
       };
-      character = {
-        success_symbol = "[➜](bold green)";
-        error_symbol = "[➜](bold red)";
-      };
     };
   };
 }
