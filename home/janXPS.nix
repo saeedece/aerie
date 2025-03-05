@@ -4,6 +4,7 @@
 }:
 {
   imports = [
+    ./modules/cmus.nix
     ./modules/hyprland
     ./modules/ghostty.nix
     ./modules/gtk.nix
