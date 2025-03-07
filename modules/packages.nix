@@ -1,0 +1,26 @@
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  environment.systemPackages = with pkgs; [
+    curl
+    cmus
+    dejavu_fonts
+    discord
+    drawio
+    evince
+    fastfetch
+    fd
+    fzf
+    keepassxc
+    mpv
+    pinentry-curses
+    ripgrep
+    rsync
+    tree
+    xfce.ristretto
+  ];
+}
