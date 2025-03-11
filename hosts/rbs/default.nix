@@ -10,6 +10,8 @@ lib.nixosSystem (
     imports = [
       ./hardware.nix
       ./prime.nix
+      ./battery.nix
+      ./touchpad.nix
     ];
 
     networking.hostName = "rbs";

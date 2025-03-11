@@ -17,6 +17,7 @@
     fzf
     keepassxc
     mpv
+    pavucontrol
     pinentry-curses
     ripgrep
     rsync
