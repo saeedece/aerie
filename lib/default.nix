@@ -21,8 +21,17 @@ let
     inherit inputs;
   };
 
+  round =
+    x:
+    let
+      dec = x - builtins.floor x;
+      flag = dec < 0.5;
+      res = if flag then (builtins.floor x) else (builtins.ceil x);
+    in
+    res;
 in
 {
+  inherit round;
   nixosSystem =
     module:
     super.nixosSystem {

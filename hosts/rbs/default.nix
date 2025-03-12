@@ -14,6 +14,9 @@ lib.nixosSystem (
       ./touchpad.nix
     ];
 
+    scaleFactor = 0.9;
+    type = "laptop";
+
     networking.hostName = "rbs";
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;

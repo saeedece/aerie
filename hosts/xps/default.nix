@@ -12,6 +12,9 @@ lib.nixosSystem (
       ./bootloaderPatch.nix
     ];
 
+    scaleFactor = 1.0;
+    type = "desktop";
+
     networking.hostName = "xps";
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;

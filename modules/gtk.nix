@@ -12,11 +12,9 @@
         adwaita-icon-theme
         gnome-themes-extra
       ];
+
       home.pointerCursor = {
         gtk.enable = true;
-        package = pkgs.vanilla-dmz;
-        name = "DMZ-White";
-        size = 20;
       };
 
       gtk = {
@@ -27,7 +25,7 @@
         font = {
           package = pkgs.cantarell-fonts;
           name = "Cantarell";
-          size = 10;
+          size = 10 * config.scaleFactor;
         };
 
         gtk3.extraConfig = {

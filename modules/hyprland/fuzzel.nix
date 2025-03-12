@@ -7,7 +7,7 @@
         settings = {
           colors.background = "f2f2f2ff";
           colors.selection = "ccdfffff";
-          main.font = "JetBrainsMono Nerd Font Mono";
+          main.font = "JetBrainsMono Nerd Font Mono:size=${builtins.toString (10.25 * config.scaleFactor)}";
         };
       };
     }
