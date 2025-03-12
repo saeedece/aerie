@@ -22,19 +22,6 @@
       ];
       home.sessionVariables.NIXOS_OZONE_WL = "1";
 
-      home.pointerCursor = {
-        name = "Vanilla-DMZ";
-        package = pkgs.vanilla-dmz;
-        hyprcursor = {
-          enable = true;
-          size = 20;
-        };
-      };
-
-      services.hypridle = lib.mkIf config.isLaptop {
-        enable = true;
-      };
-
       wayland.windowManager.hyprland = {
         enable = true;
         settings = {
@@ -53,7 +40,7 @@
           ];
 
           env = [
-            "XCURSOR_SIZE,24"
+            "XCURSOR_SIZE,${builtins.toString (lib.round (config.scaleFactor * 20))}"
             "QT_QPA_PLATFORM_THEME,wayland"
             "LIBVA_DRIVER_NAME,nvidia"
             "XDG_SESSION_TYPE,wayland"

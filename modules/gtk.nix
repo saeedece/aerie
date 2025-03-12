@@ -28,6 +28,12 @@
           size = 10 * config.scaleFactor;
         };
 
+        cursorTheme = {
+          package = pkgs.vanilla-dmz;
+          name = "Vanilla-DMZ";
+          size = lib.round (config.scaleFactor * 20);
+        };
+
         gtk3.extraConfig = {
           gtk-application-prefer-dark-theme = false;
         };
