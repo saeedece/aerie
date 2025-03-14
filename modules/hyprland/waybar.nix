@@ -14,7 +14,7 @@
             modules-right = [ "clock" ] ++ (lib.optional config.isLaptop "battery") ++ [ "tray" ];
             clock = {
               tooltip = false;
-              format = "{:%a %m/%d/%y %H:%M}";
+              format = "{:%a %Y-%m-%d %H:%M}";
             };
             tray = {
               tooltip = false;
