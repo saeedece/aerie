@@ -12,7 +12,6 @@ lib.nixosSystem (
       ./bootloaderPatch.nix
     ];
 
-    scaleFactor = 1.0;
     type = "desktop";
 
     networking.hostName = "xps";

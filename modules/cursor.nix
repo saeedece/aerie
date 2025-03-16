@@ -8,12 +8,13 @@
   home-manager.sharedModules = [
     {
       home.pointerCursor = {
-        name = "Vanilla-DMZ";
+        enable = true;
         package = pkgs.vanilla-dmz;
-        hyprcursor = {
-          enable = true;
-          size = lib.round (config.scaleFactor * 20);
-        };
+        name = "Vanilla-DMZ";
+        size = 18;
+        gtk.enable = true;
+        hyprcursor.enable = true;
+        x11.enable = true;
       };
     }
   ];

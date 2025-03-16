@@ -1,4 +1,5 @@
 {
+  inputs,
   config,
   lib,
   pkgs,
@@ -40,8 +41,7 @@
           ];
 
           env = [
-            "XCURSOR_SIZE,${builtins.toString (lib.round (config.scaleFactor * 20))}"
-            "QT_QPA_PLATFORM_THEME,wayland"
+            "XCURSOR_SIZE,18"
             "LIBVA_DRIVER_NAME,nvidia"
             "XDG_SESSION_TYPE,wayland"
             "GBM_BACKEND,nvidia_drm"
@@ -50,7 +50,7 @@
 
           bind = [
             "$mod, Q, exec, ghostty"
-            "$mod, R, exec, fuzzel"
+            "$mod, R, exec, bemenu-run"
             "$mod, E, exec, thunar"
             "$mod, C, killactive,"
             "$mod, M, exit,"

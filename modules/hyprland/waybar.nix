@@ -10,7 +10,6 @@
             position = "bottom";
             gtk-layer-shell = true;
             modules-left = [ "hyprland/workspaces" ];
-            modules-center = [ "hyprland/window" ];
             modules-right = [ "clock" ] ++ (lib.optional config.isLaptop "battery") ++ [ "tray" ];
             clock = {
               tooltip = false;
@@ -27,7 +26,7 @@
             border: none;
             border-radius: 0;
             font-family: "JetBrainsMono Nerd Font Mono";
-            font-size: ${builtins.toString (config.scaleFactor * 14)}px;
+            font-size: 14px;
             min-height: 0;
           }
 

@@ -7,7 +7,7 @@
         settings = {
           global = {
             enable_posix_regex = true;
-            font = "JetBrainsMono Nerd Font Mono 10.25";
+            font = "JetBrainsMono Nerd Font Mono 10";
             word_wrap = "yes";
             geometry = "0x0-62-62";
             padding = 2;

@@ -6,7 +6,7 @@
         enable = true;
         settings = {
           font-family = "JetBrainsMono Nerd Font Mono";
-          font-size = 10.25 * config.scaleFactor;
+          font-size = 10;
           shell-integration-features = "no-cursor";
           theme = "modus_operandi";
           window-theme = "ghostty";

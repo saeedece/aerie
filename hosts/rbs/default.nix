@@ -14,7 +14,6 @@ lib.nixosSystem (
       ./touchpad.nix
     ];
 
-    scaleFactor = 0.9;
     type = "laptop";
 
     networking.hostName = "rbs";

@@ -13,10 +13,6 @@
         gnome-themes-extra
       ];
 
-      home.pointerCursor = {
-        gtk.enable = true;
-      };
-
       gtk = {
         enable = true;
         theme.name = "Adwaita";
@@ -25,13 +21,7 @@
         font = {
           package = pkgs.cantarell-fonts;
           name = "Cantarell";
-          size = 10 * config.scaleFactor;
-        };
-
-        cursorTheme = {
-          package = pkgs.vanilla-dmz;
-          name = "Vanilla-DMZ";
-          size = lib.round (config.scaleFactor * 20);
+          size = 10;
         };
 
         gtk3.extraConfig = {
