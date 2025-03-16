@@ -10,7 +10,6 @@ lib.nixosSystem (
     imports = [
       ./hardware.nix
       ./prime.nix
-      ./battery.nix
       ./touchpad.nix
     ];
 
@@ -19,6 +18,9 @@ lib.nixosSystem (
     networking.hostName = "rbs";
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
+
+    hardware.graphics.enable = true;
+    hardware.graphics.enable32Bit = true;
 
     users.users = {
       jan = {

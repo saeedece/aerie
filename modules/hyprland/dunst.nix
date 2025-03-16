@@ -1,5 +1,5 @@
 { config, lib, ... }:
-{
+lib.mkIf config.isDesktop {
   home-manager.sharedModules = [
     {
       services.dunst = {

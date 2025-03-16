@@ -5,9 +5,7 @@
   pkgs,
   ...
 }:
-{
-  hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true;
+lib.mkIf config.isDesktop {
 
   programs.hyprland = {
     enable = true;
