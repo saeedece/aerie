@@ -23,7 +23,10 @@ lib.nixosSystem (
       jan = {
         isNormalUser = true;
         description = "jan";
-        extraGroups = [ "wheel" ];
+        extraGroups = [
+          "wheel"
+          "networkmanager"
+        ];
         shell = pkgs.zsh;
       };
     };
