@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  services.blueman.enable = true;
+  services.blueman.enable = lib.mkIf config.isHyprland true;
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;

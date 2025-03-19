@@ -4,7 +4,7 @@
   pkgs,
   ...
 }:
-{
+lib.mkIf config.isHyprland {
   programs.xfconf.enable = true;
   programs.thunar = {
     enable = true;

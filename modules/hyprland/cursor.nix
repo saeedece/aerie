@@ -4,7 +4,7 @@
   pkgs,
   ...
 }:
-lib.mkIf config.isDesktop {
+lib.mkIf config.isHyprland {
   home-manager.sharedModules = [
     {
       home.pointerCursor = {

@@ -1,5 +1,5 @@
 { config, lib, ... }:
-lib.mkIf config.isDesktop {
+lib.mkIf config.isHyprland {
   home-manager.sharedModules = [
     {
       services.dunst = {

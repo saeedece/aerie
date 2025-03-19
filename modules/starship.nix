@@ -8,42 +8,32 @@
         enableZshIntegration = true;
 
         settings = {
-          format = lib.concatStrings [
-            "$username"
-            "$hostname"
-            "$directory"
-            "$git_branch"
-            "$git_state"
-            "$git_status"
-            "$nix_shell"
-            "$cmd_duration"
-            "$line_break"
-            "$character"
-          ];
-
-          directory = {
-            truncation_length = 1;
-            style = "bold";
-          };
-
-          nix_shell = {
-            symbol = "";
-            style = "bold blue";
-          };
-
-          git_branch = {
-            symbol = "";
-            style = "bold red";
-          };
-
-          git_state.style = "bold red";
-          git_status.style = "bold red";
-
+          aws.symbol = "aws ";
+          c.symbol = "C ";
           character = {
             success_symbol = "[❯](green)";
             error_symbol = "[❯](red)";
             vimcmd_symbol = "[❮](green)";
           };
+          deno.symbol = "deno ";
+          directory = {
+            truncation_length = 1;
+            style = "bold";
+          };
+          git_branch = {
+            symbol = "";
+            style = "bold red";
+          };
+          git_state.style = "bold red";
+          git_status.style = "bold red";
+          nix_shell = {
+            symbol = "nix ";
+            style = "bold blue";
+          };
+          package.symbol = "pkg ";
+          python.symbol = "py ";
+          rust.symbol = "rs ";
+          zig.symbol = "zig ";
         };
       };
     }

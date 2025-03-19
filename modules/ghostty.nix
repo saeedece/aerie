@@ -10,7 +10,7 @@
           shell-integration-features = "no-cursor";
           theme = "modus_operandi";
           window-theme = "ghostty";
-          window-decoration = false;
+          window-decoration = "auto";
         };
         themes = {
           "modus_operandi" = {

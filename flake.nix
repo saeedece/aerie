@@ -15,6 +15,10 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -24,6 +28,7 @@
       home-manager,
       nix-index-database,
       lix-module,
+      fenix,
       ...
     }:
     let

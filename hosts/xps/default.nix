@@ -9,17 +9,16 @@ lib.nixosSystem (
   {
     imports = [
       ./hardware.nix
-      ./bootloaderPatch.nix
+      ./bootloader_patch.nix
     ];
 
     type = "desktop";
+    desktop = "kde";
 
     networking.hostName = "xps";
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
-
     hardware.graphics.enable = true;
-    hardware.graphics.enable32Bit = true;
 
     users.users = {
       jan = {

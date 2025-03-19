@@ -5,7 +5,7 @@
   pkgs,
   ...
 }:
-lib.mkIf config.isDesktop {
+lib.mkIf config.isHyprland {
 
   programs.hyprland = {
     enable = true;
@@ -130,6 +130,19 @@ lib.mkIf config.isDesktop {
           master.new_status = "master";
           gestures.workspace_swipe = "off";
           misc.disable_hyprland_logo = true;
+
+          group = {
+            "col.border_active" = "";
+            "col.border_inactive" = "";
+            "col.border_locked_active" = "";
+            "col.border_locked_inactive" = "";
+
+            groupbar = {
+              enabled = true;
+              font_family = "";
+              font_size = 10;
+            };
+          };
 
           device = {
             name = "epic-mouse-v1";

@@ -15,7 +15,7 @@ let
     inputs.nix-index-database.nixosModules.nix-index
     inputs.lix-module.nixosModules.default
   ];
-  inputOverlays = [ ];
+  inputOverlays = [ inputs.fenix.overlays.default ];
 
   specialArgs = {
     inherit inputs;

@@ -1,5 +1,5 @@
 { config, lib, ... }:
-lib.mkIf config.isDesktop {
+lib.mkIf config.isHyprland {
   home-manager.sharedModules = [
     {
       programs.waybar = {
@@ -10,6 +10,7 @@ lib.mkIf config.isDesktop {
             position = "bottom";
             gtk-layer-shell = true;
             modules-left = [ "hyprland/workspaces" ];
+            modules-center = [ "hyprland/window" ];
             modules-right = [ "clock" ] ++ (lib.optional config.isLaptop "battery") ++ [ "tray" ];
             clock = {
               tooltip = false;
