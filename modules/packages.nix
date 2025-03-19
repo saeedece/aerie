@@ -7,7 +7,6 @@
 {
   environment.systemPackages = with pkgs; [
     curl
-    dejavu_fonts
     discord
     drawio
     fastfetch
@@ -15,6 +14,7 @@
     fzf
     keepassxc
     mpv
+    obsidian
     pinentry-curses
     ripgrep
     rsync
