@@ -10,6 +10,7 @@
         settings = {
           aws.symbol = "aws ";
           c.symbol = "C ";
+          cmake.symbol = "cmake ";
           character = {
             success_symbol = "[❯](green)";
             error_symbol = "[❯](red)";
@@ -26,6 +27,7 @@
           };
           git_state.style = "bold red";
           git_status.style = "bold red";
+          julia.symbol = "jl ";
           nix_shell = {
             symbol = "nix ";
             style = "bold blue";
