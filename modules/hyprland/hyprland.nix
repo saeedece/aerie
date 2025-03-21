@@ -40,6 +40,7 @@ lib.mkIf config.isHyprland {
 
           env = [
             "XCURSOR_SIZE,18"
+            "QT_QPA_PLATFORM,wayland"
             "LIBVA_DRIVER_NAME,nvidia"
             "XDG_SESSION_TYPE,wayland"
             "GBM_BACKEND,nvidia_drm"
@@ -132,14 +133,9 @@ lib.mkIf config.isHyprland {
           misc.disable_hyprland_logo = true;
 
           group = {
-            "col.border_active" = "";
-            "col.border_inactive" = "";
-            "col.border_locked_active" = "";
-            "col.border_locked_inactive" = "";
-
             groupbar = {
               enabled = true;
-              font_family = "";
+              font_family = "JetBrainsMono Nerd Font Mono";
               font_size = 10;
             };
           };

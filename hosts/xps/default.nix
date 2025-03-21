@@ -13,7 +13,7 @@ lib.nixosSystem (
     ];
 
     type = "desktop";
-    desktop = "kde";
+    desktop = "hyprland";
 
     networking.hostName = "xps";
     boot.loader.systemd-boot.enable = true;
