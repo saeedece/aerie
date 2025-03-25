@@ -27,7 +27,7 @@
           };
           git_state.style = "bold red";
           git_status.style = "bold red";
-          gleam.symvol = "gleam ";
+          gleam.symbol = "gleam ";
           golang.symbol = "go ";
           julia.symbol = "jl ";
           nix_shell = {
