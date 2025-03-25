@@ -27,11 +27,14 @@
           };
           git_state.style = "bold red";
           git_status.style = "bold red";
+          gleam.symvol = "gleam ";
+          golang.symbol = "go ";
           julia.symbol = "jl ";
           nix_shell = {
             symbol = "nix ";
             style = "bold blue";
           };
+          nodejs.symbol = "nodejs ";
           package.symbol = "pkg ";
           python.symbol = "py ";
           rust.symbol = "rs ";
