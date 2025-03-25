@@ -18,6 +18,7 @@ lib.mkIf config.isHyprland {
       home.packages = with pkgs; [
         grim
         hyprpolkitagent
+        swww
       ];
       home.sessionVariables.NIXOS_OZONE_WL = "1";
 
