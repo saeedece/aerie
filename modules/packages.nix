@@ -27,5 +27,6 @@
     ]
     ++ lib.optionals config.isHyprland [
       xfce.ristretto
+      pavucontrol
     ];
 }
