@@ -15,7 +15,6 @@
       fastfetch
       fd
       fzf
-      kdePackages.okular
       keepassxc
       mold
       mpv
@@ -26,7 +25,8 @@
       tree
     ]
     ++ lib.optionals config.isHyprland [
-      xfce.ristretto
+      kdePackages.okular
       pavucontrol
+      xfce.ristretto
     ];
 }
