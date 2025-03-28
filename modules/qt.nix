@@ -1,0 +1,8 @@
+{ config, lib, ... }:
+{
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita";
+  };
+}
