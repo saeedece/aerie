@@ -9,6 +9,7 @@
     with pkgs;
     [
       clang
+      claude-code
       curl
       discord
       drawio
@@ -23,8 +24,10 @@
       ripgrep
       rsync
       tree
+      uv
     ]
     ++ lib.optionals config.isHyprland [
+      foliate
       kdePackages.okular
       pavucontrol
       xfce.ristretto
