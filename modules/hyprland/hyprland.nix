@@ -30,6 +30,7 @@ lib.mkIf config.isHyprland {
             "systemctl --user start hyprpolkitagent"
             "thunar --daemon"
             "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+            "swww-daemon"
             "dunst"
             "waybar"
           ];
