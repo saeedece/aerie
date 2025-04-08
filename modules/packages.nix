@@ -15,7 +15,11 @@
       drawio
       fastfetch
       fd
+      foliate
       fzf
+      gh
+      kdePackages.kolourpaint
+      kdePackages.okular
       keepassxc
       mold
       mpv
@@ -27,8 +31,6 @@
       uv
     ]
     ++ lib.optionals config.isHyprland [
-      foliate
-      kdePackages.okular
       pavucontrol
       xfce.ristretto
     ];
