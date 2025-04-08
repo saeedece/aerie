@@ -6,7 +6,7 @@
         enable = true;
         settings = {
           font-family = "JetBrainsMono Nerd Font Mono";
-          font-size = 10;
+          font-size = 9;
           shell-integration-features = "no-cursor";
           theme = "modus_operandi";
           window-theme = "ghostty";
